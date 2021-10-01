@@ -1,5 +1,6 @@
+DROP DATABASE IF EXISTS devops;
 CREATE DATABASE devops;
-
+use devops;
 DROP TABLE IF EXISTS `usuarios`;
 
 CREATE TABLE `usuarios` (
@@ -12,7 +13,7 @@ CREATE TABLE `usuarios` (
   PRIMARY KEY (`id`)
 ) AUTO_INCREMENT=1;
 
-INSERT INTO `myTable` (`name`,`phone`,`country`,`email`,`address`)
+INSERT INTO `usuarios` (`name`,`phone`,`country`,`email`,`address`)
 VALUES
   ("Karyn Beasley","1-387-994-6340","New Zealand","natoque@eutellus.edu","786-5209 Proin Ave"),
   ("Kenyon Robertson","1-887-311-6501","Brazil","convallis@molestie.com","1902 Egestas St."),
@@ -24,7 +25,7 @@ VALUES
   ("Jaime Langley","1-938-571-7112","Australia","vehicula.pellentesque@mus.edu","Ap #267-1539 Orci Avenue"),
   ("Maryam Stephenson","(144) 371-5287","Poland","consectetuer.mauris@duicras.edu","6510 In Road"),
   ("Karyn O'neill","(585) 795-4538","Nigeria","libero.morbi@semsemper.co.uk","4844 Eget Avenue");
-INSERT INTO `myTable` (`name`,`phone`,`country`,`email`,`address`)
+INSERT INTO `usuarios` (`name`,`phone`,`country`,`email`,`address`)
 VALUES
   ("Eaton Diaz","(578) 233-5317","Vietnam","lectus.sit.amet@orci.com","2872 Augue Road"),
   ("Larissa Osborn","1-454-182-2383","Netherlands","donec@amet.co.uk","P.O. Box 167, 6533 Duis Av."),
@@ -36,7 +37,7 @@ VALUES
   ("Maryam Hopkins","(467) 834-7344","Brazil","egestas.aliquam@pellentesqueeget.net","P.O. Box 963, 5660 Nec St."),
   ("Karen Meyer","(810) 594-1232","Canada","accumsan.laoreet@molestietellus.co.uk","Ap #605-7508 Vitae Ave"),
   ("Joan Bernard","(821) 831-6235","France","sed.diam.lorem@nisicum.org","247-5604 Amet Ave");
-INSERT INTO `myTable` (`name`,`phone`,`country`,`email`,`address`)
+INSERT INTO `usuarios` (`name`,`phone`,`country`,`email`,`address`)
 VALUES
   ("Quail Irwin","(774) 788-3753","Indonesia","et.risus@ornareplacerat.org","1740 At Ave"),
   ("Meredith Gillespie","1-326-893-2759","Peru","morbi@nuncest.edu","200-9199 Posuere Av."),
@@ -48,7 +49,7 @@ VALUES
   ("Adam Graves","1-660-218-0447","Pakistan","pede.praesent.eu@pharetraut.co.uk","542-4157 Donec Avenue"),
   ("Martin Howard","1-624-671-4367","New Zealand","non.sollicitudin.a@vestibulumloremsit.ca","130-9793 Donec St."),
   ("Miranda Leon","1-382-716-5758","Australia","pretium.et@diamluctus.ca","4235 Nulla Avenue");
-INSERT INTO `myTable` (`name`,`phone`,`country`,`email`,`address`)
+INSERT INTO `usuarios` (`name`,`phone`,`country`,`email`,`address`)
 VALUES
   ("Amanda Heath","(611) 658-5377","Canada","hendrerit@aliquamarcu.org","497-8786 Vel Rd."),
   ("Neve Booth","1-447-315-8334","Brazil","congue.in@quis.ca","534-5904 In Street"),
@@ -60,7 +61,7 @@ VALUES
   ("Dustin Green","1-485-265-3320","Netherlands","quisque.nonummy.ipsum@massarutrum.net","1869 Odio Av."),
   ("Kibo Leblanc","1-840-473-8471","Colombia","elit@justofaucibus.co.uk","Ap #206-4990 Ut Rd."),
   ("Blaze Mcintyre","1-828-578-4578","Ireland","risus.morbi@at.net","Ap #825-7062 Et Ave");
-INSERT INTO `myTable` (`name`,`phone`,`country`,`email`,`address`)
+INSERT INTO `usuarios` (`name`,`phone`,`country`,`email`,`address`)
 VALUES
   ("Shaine Puckett","1-738-173-1808","Mexico","turpis.nulla@laciniavitaesodales.ca","P.O. Box 288, 4263 Ullamcorper, Street"),
   ("Angelica Mitchell","(601) 706-2149","South Korea","congue.elit@suspendissesagittis.org","Ap #686-2332 Luctus Av."),
@@ -72,7 +73,7 @@ VALUES
   ("MacKenzie Hines","1-866-244-7376","India","libero.donec.consectetuer@diamdictum.ca","P.O. Box 335, 2776 Neque Ave"),
   ("Charde Hebert","(347) 158-4855","Canada","dolor@vestibulummassarutrum.co.uk","905-5486 Elit, Rd."),
   ("Avram Arnold","(485) 612-2627","Australia","urna.nec@pede.org","Ap #723-6145 Enim, Street");
-INSERT INTO `myTable` (`name`,`phone`,`country`,`email`,`address`)
+INSERT INTO `usuarios` (`name`,`phone`,`country`,`email`,`address`)
 VALUES
   ("Quinn Ashley","1-649-983-5043","Indonesia","hendrerit.a@amet.org","9356 Et Avenue"),
   ("Charles Lara","(778) 254-2744","France","neque.nullam.ut@atlacus.net","P.O. Box 116, 4695 Condimentum. St."),
@@ -84,7 +85,7 @@ VALUES
   ("Rebecca Ortega","(527) 512-6437","Austria","sit.amet.risus@maurisnulla.com","784-8587 Ornare, Street"),
   ("Sara Michael","(771) 562-2845","New Zealand","euismod.est@sagittisplacerat.ca","232-4005 Enim. Street"),
   ("Shelley Burnett","1-369-209-7648","Russian Federation","diam.duis@diamloremauctor.edu","P.O. Box 417, 8051 Ante. Av.");
-INSERT INTO `myTable` (`name`,`phone`,`country`,`email`,`address`)
+INSERT INTO `usuarios` (`name`,`phone`,`country`,`email`,`address`)
 VALUES
   ("Scarlet Aguilar","1-776-601-1995","Chile","eu.augue.porttitor@urnanullamlobortis.com","Ap #203-5067 Luctus Ave"),
   ("Sean Mckay","1-851-622-7811","Mexico","mi.pede@insodales.com","255-9429 Non, St."),
@@ -96,7 +97,7 @@ VALUES
   ("Byron Atkinson","(457) 116-6180","United Kingdom","donec.nibh@lobortisquis.org","Ap #301-5786 Dolor Rd."),
   ("Elmo Brown","1-839-194-5554","Ireland","semper.erat@malesuadafames.edu","P.O. Box 322, 7911 Ante Av."),
   ("Francesca Harper","1-196-970-7875","Peru","fames@ac.edu","Ap #161-6054 Ante, Street");
-INSERT INTO `myTable` (`name`,`phone`,`country`,`email`,`address`)
+INSERT INTO `usuarios` (`name`,`phone`,`country`,`email`,`address`)
 VALUES
   ("Skyler Frank","1-821-224-0952","Sweden","purus.duis@consequatpurus.net","Ap #563-9762 In Rd."),
   ("Kristen Frost","1-932-675-6543","Ireland","viverra.maecenas.iaculis@mi.co.uk","420-5343 Proin Av."),
@@ -108,7 +109,7 @@ VALUES
   ("Bruno Summers","(351) 579-2374","Italy","nisi.sem@aliquamgravida.com","323-2031 Non, St."),
   ("Urielle Davis","(946) 356-6053","United States","metus.facilisis@quisaccumsan.co.uk","307-6682 Euismod St."),
   ("Dominic Blair","1-623-557-5936","Belgium","cubilia.curae.phasellus@sedauctor.com","238-3778 Egestas. Av.");
-INSERT INTO `myTable` (`name`,`phone`,`country`,`email`,`address`)
+INSERT INTO `usuarios` (`name`,`phone`,`country`,`email`,`address`)
 VALUES
   ("Perry Fowler","(657) 763-0865","Spain","elementum.sem.vitae@lobortis.org","604-7367 Libero. Road"),
   ("Lesley Guthrie","(681) 477-5733","Nigeria","gravida.mauris@maecenasornareegestas.edu","Ap #297-746 Cursus Ave"),
@@ -120,7 +121,7 @@ VALUES
   ("Rachel Alston","(584) 771-3892","France","tellus.id@sempertellusid.co.uk","Ap #962-1426 Risus. Ave"),
   ("Uta Martin","1-477-602-7611","Italy","orci.donec.nibh@nullatempor.org","863-3538 Elit, Av."),
   ("Damian Ashley","1-423-655-6537","Russian Federation","eu.ligula@ut.co.uk","461-3974 Dolor Rd.");
-INSERT INTO `myTable` (`name`,`phone`,`country`,`email`,`address`)
+INSERT INTO `usuarios` (`name`,`phone`,`country`,`email`,`address`)
 VALUES
   ("Xanthus Lindsay","(285) 675-2723","France","blandit.nam.nulla@arcuvel.edu","283-3443 Suspendisse Road"),
   ("Thane Aguilar","(810) 703-2432","India","orci@namporttitor.ca","585-5686 Sagittis. St."),
